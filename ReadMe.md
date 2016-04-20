@@ -1,8 +1,8 @@
 ### SenseHAT
 #### A Short Overview
-#### By Paul Amazona
-#### Presented at Python User Group Singapore
-#### on 18April2016
+By Paul Amazona
+Presented at Python User Group Singapore
+on 18April2016
 
 Summary of Files:
 
