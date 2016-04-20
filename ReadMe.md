@@ -8,3 +8,4 @@ Summary of Files:
 
 * SenseHat_PUGS_20160418.pdf: slides used during the presentation
 * Source Code - to follow
+* Video Link: https://engineers.sg/video/python-for-rpi-sense-hat-python-sg--677
