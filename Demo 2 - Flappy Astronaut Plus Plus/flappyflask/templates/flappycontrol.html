@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SenseHAT Message</title>
+</head>
+<body>
+    <div>
+         <p>
+            <button onmousedown="flapup()" onmouseup="flapdown()">FLY!!!</button>
+         </p>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="{{ url_for('static', filename='flappycontrol.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script>
+    function startgame() {
+        var url = "http://<place your flappy server here>:5000/flappycmd?cmd=startgame";
+        $.get(url, function(response){});
+    }
+    
+    function flapup() {
+        var url = "http://<place your flappy server here>:5000/flappycmd?cmd=flapup";
+        $.get(url, function(response){});
+    }
+    
+    function flapdown() {
+        var url = "http://<place your flappy server here>:5000/flappycmd?cmd=flapdown";
+        $.get(url, function(response){});
+    }
+    
+    function stopgame() {
+        var url = "http://<place your flappy server here>:5000/flappycmd?cmd=stopgame";
+        $.get(url, function(response){});
+    }
+    
+    
+    // http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+    $(document).on("keydown", function(e){
+        if (e.keyCode === 32)  flapup(); // space
+    });
+
+    $(document).on("keyup", function(e){
+        if (e.keyCode === 32) flapdown()); // space
+    });
+
+
+</script>
+<head>
+    <title>SenseHAT Message</title>
+</head>
+
+<body>
+    <div>
+         <p>
+            <button onclick="startgame()">Start Game</button>
+            <br>
+            <button onclick="stopgame()">Stop Game</button>
+            <br>
+            <br>
+            <button onmousedown="flapup()" onmouseup="flapdown()">FLY!!!</button>
+         </p>
+    </div>
+</body>
+</html>
